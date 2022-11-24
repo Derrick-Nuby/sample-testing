@@ -18,9 +18,12 @@
 
 
 	<script>
-
+		if (localStorage.getItem('blog-demo') != null) {
+			var sampleblog = JSON.parse(localStorage.getItem('blog-demo'));
+		} else {
+			var sampleblog = [];
+		}
 		document.getElementById('my-form').addEventListener('submit', (e) => {
-			const sampleblog = [];
 			e.preventDefault();
 
 			const title = document.getElementById('title').value
