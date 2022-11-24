@@ -8,18 +8,20 @@
 <body>
 
 	<form id="my-form">
-		<input type="" id="title" name="">
+		<input type="text" id="title" name="">
 		<input type="author" id="author" name="">
 		<textarea id="post" style="width: 500"></textarea>
 		<button type="submit">submit</button>
 	</form>
 
+	
 
-	<script type="text/javascript">
+
+	<script>
 
 		document.getElementById('my-form').addEventListener('submit', (e) => {
-			const sampleblog = []
-			e.preventDefault()
+			const sampleblog = [];
+			e.preventDefault();
 
 			const title = document.getElementById('title').value
 			const author = document.getElementById('author').value
